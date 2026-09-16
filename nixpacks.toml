@@ -1,0 +1,12 @@
+[variables]
+NODE_VERSION = "22"
+NPM_CONFIG_PRODUCTION = "true"
+
+[phases.setup]
+nixPkgs = ["nodejs_22"]
+
+[phases.install]
+cmds = ["cd api && npm install --omit=dev"]
+
+[start]
+cmd = "cd api && npm start"
