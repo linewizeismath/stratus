@@ -1,6 +1,9 @@
 {
   "name": "stratus",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "node api.js",
     "dev": "node --watch api.js"
